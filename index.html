@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form" action="https://formsubmit.io/send/szymon.okulowski@gmail.com" method="POST">
+            <h1 class="container__title">Zarejestruj się!</h1>
+
+            <div class="container__box">
+                <label for="login">Login:</label>
+                <input id="login" type="text" placeholder="Podaj login...">
+                <p class="container__box-error">error</p>
+            </div>
+
+            <div class="container__box">
+                <label for="password">Hasło:</label>
+                <input id="password" type="password" placeholder="Podaj hasło...">
+                <p class="container__box-error">error</p>
+            </div>
+
+            <div class="container__box">
+                <label for="password-repeat">Powtórz hasło:</label>
+                <input id="password-repeat" type="password" placeholder="Powtórz hasło...">
+                <p class="container__box-error">error</p>
+            </div>
+
+            <div class="container__box">
+                <label for="email">Adres e-mail:</label>
+                <input id="email" type="email" placeholder="Podaj e-mail...">
+                <p class="container__box-error">error</p>
+            </div>
+
+            <div class="container__btns">
+                <button class="container__btns-clear btn">Wyczyść</button>
+                <input class="container__btns-send btn" type="submit" value="Wyślij">
+            </div>
+
+            <div class="container__popup">
+                <p class="container__popup-text">Formularz został poprawnie wysłany!</p>
+                <button class="container__popup-close btn">Zamknij</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
